@@ -183,13 +183,19 @@ header {
   width: 50vh;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 .contact-container .form-contacts-container .form .contact-form {
   display: flex;
   flex-direction: column;
   color: #ffffff;
   gap: 10px;
+}
+.contact-container .form-contacts-container .form .form-item {
+  width: 300px;
+}
+.contact-container .form-contacts-container .form .textarea {
+  height: 100px;
 }
 .contact-container .form-contacts-container .contacts {
   display: flex;
@@ -200,6 +206,10 @@ header {
 .contact-container .form-contacts-container .contacts .contacts-item {
   display: flex;
   justify-content: center;
+}
+.contact-container .form-contacts-container .contacts .linkedin-text {
+  cursor: pointer;
+  text-decoration: none;
 }
 * {
   padding: 0;

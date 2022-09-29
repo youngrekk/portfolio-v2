@@ -11,7 +11,7 @@ window.onload = function() {
         // these IDs from the previous steps
         emailjs.sendForm('contact_service', 'contact_form', this)
             .then(function() {
-                console.log('SUCCESS!');
+                alert("Mensaje enviado");
             }, function(error) {
                 console.log('FAILED...', error);
             });
