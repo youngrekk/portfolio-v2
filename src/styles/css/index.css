@@ -113,12 +113,17 @@ header {
 .projects-container .projects .projects-pi {
   border-radius: 4px;
   width: 23rem;
-  height: 320px;
+  height: 21.3rem;
   background-color: #222222;
   display: flex;
   flex-direction: column;
   transition: all 400ms ease;
   cursor: pointer;
+}
+@media only screen and (max-width: 70rem) {
+  .projects-container .projects .projects-pi {
+    width: 19rem;
+  }
 }
 .projects-container .projects .projects-pi .projects-pi-h4 {
   border-radius: 4px;
@@ -142,12 +147,17 @@ header {
 .projects-container .projects .projects-portfolio {
   border-radius: 4px;
   width: 23rem;
-  height: 320px;
+  height: 21.3rem;
   background-color: #222222;
   display: flex;
   flex-direction: column;
   transition: all 400ms ease;
   cursor: pointer;
+}
+@media only screen and (max-width: 70rem) {
+  .projects-container .projects .projects-portfolio {
+    width: 19rem;
+  }
 }
 .projects-container .projects .projects-portfolio .projects-portfolio-h4 {
   border-radius: 4px;
