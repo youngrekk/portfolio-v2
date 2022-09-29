@@ -5,28 +5,30 @@
     font-family: @ubuntu-font;
     padding-bottom: 100px;
 
-    .contact-container-h3 {
+    .contact-container-h2 {
         display: flex;
         align-items: center;
         justify-content: center;
         color: #ffffff;
-        margin-top: 150px;
+        margin-top: 9.375rem;
         font-size: 50px;
+        @media only screen and (max-width: 70rem) {
+           margin-top: 7rem;
+        }
     }
 
     .form-contacts-container {
         margin-top: 120px;
         display: flex;
-        gap: 100px;
         flex-wrap: wrap;
-        justify-content: space-around;
-        
-        
+        justify-content: center;
+        gap: 12rem;
         .form {
             width: 50vh;
             display: flex;
             justify-content: center;
             align-items: flex-start;
+            margin-left: 60px;
             .contact-form {
                 display: flex;
                 flex-direction: column;
@@ -39,22 +41,43 @@
             .textarea {
                 height: 100px;
             }
+            @media only screen and (max-width: 70rem) {
+                margin-left: 0px;
+            }
+        }
+        @media only screen and (max-width: 70rem) {
+            gap: 8rem
         }
 
 
         .contacts {
             display: flex;
             flex-direction: column;
-
+            justify-content: center;
             color: #ffffff;
             gap: 30px;
             .contacts-item {
                 display: flex;
                 justify-content: center;
+                align-items: center;
+                width: fit-content;
+                gap: 10px;
+                margin-bottom: 0px;
             }
             .linkedin-text {
                 cursor: pointer;
                 text-decoration: none;
+                width: fit-content
+            }
+
+            .linkedin-icon {
+                font-size: 33px;
+                width: fit-content;
+                align-items: center;
+                margin-right: 10px;
+            }
+            .xd {
+                margin-left: 4px;
             }
         }
     }

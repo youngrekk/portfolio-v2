@@ -5,27 +5,33 @@
   color: #ffffff;
   flex-wrap: wrap;
   flex-direction: row;
-  padding: 200px 50px;
   justify-content: center;
+  gap: 4rem;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+@media only screen and (max-width: 70rem) {
+  .about-me-container {
+    padding-bottom: 8rem;
+  }
 }
 .about-me-container .about-me {
   display: flex;
   flex-direction: column;
   width: 50%;
-  padding: 5px 30px;
+  padding-top: 3rem;
 }
 .about-me-container .about-me-h3 {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 30px;
 }
 .about-me-container .about-me-text {
   padding-top: 5px;
   width: 100%;
 }
 .me-photo {
-  width: 350px;
+  width: 22rem;
 }
 header {
   background-color: #181818;
@@ -81,15 +87,20 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-bottom: 200px;
+  padding-bottom: 10rem;
   background-color: #181818;
   font-family: 'Ubuntu', sans-serif;
 }
 .projects-container .projects-container-h2 {
   font-size: 50px;
-  margin-top: 150px;
+  margin-top: 10rem;
   margin-bottom: 100px;
   color: #ffffff;
+}
+@media only screen and (max-width: 70rem) {
+  .projects-container .projects-container-h2 {
+    margin-top: 7.3rem;
+  }
 }
 .projects-container .projects {
   display: flex;
@@ -97,11 +108,11 @@ header {
   justify-content: center;
   flex-wrap: wrap;
   margin-bottom: 10px;
-  gap: 50px;
+  gap: 4.063rem;
 }
 .projects-container .projects .projects-pi {
   border-radius: 4px;
-  width: 400px;
+  width: 23rem;
   height: 320px;
   background-color: #222222;
   display: flex;
@@ -130,7 +141,7 @@ header {
 }
 .projects-container .projects .projects-portfolio {
   border-radius: 4px;
-  width: 400px;
+  width: 23rem;
   height: 320px;
   background-color: #222222;
   display: flex;
@@ -157,6 +168,11 @@ header {
   transform: translate(-8px, -8px);
   box-shadow: 8px 8px 1px -2px #f34747;
 }
+@media only screen and (max-width: 70rem) {
+  .projects-container {
+    padding-bottom: 8rem;
+  }
+}
 .contact-container {
   display: flex;
   flex-direction: column;
@@ -164,26 +180,32 @@ header {
   font-family: 'Ubuntu', sans-serif;
   padding-bottom: 100px;
 }
-.contact-container .contact-container-h3 {
+.contact-container .contact-container-h2 {
   display: flex;
   align-items: center;
   justify-content: center;
   color: #ffffff;
-  margin-top: 150px;
+  margin-top: 9.375rem;
   font-size: 50px;
+}
+@media only screen and (max-width: 70rem) {
+  .contact-container .contact-container-h2 {
+    margin-top: 7rem;
+  }
 }
 .contact-container .form-contacts-container {
   margin-top: 120px;
   display: flex;
-  gap: 100px;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 12rem;
 }
 .contact-container .form-contacts-container .form {
   width: 50vh;
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  margin-left: 60px;
 }
 .contact-container .form-contacts-container .form .contact-form {
   display: flex;
@@ -197,19 +219,44 @@ header {
 .contact-container .form-contacts-container .form .textarea {
   height: 100px;
 }
+@media only screen and (max-width: 70rem) {
+  .contact-container .form-contacts-container .form {
+    margin-left: 0px;
+  }
+}
+@media only screen and (max-width: 70rem) {
+  .contact-container .form-contacts-container {
+    gap: 8rem;
+  }
+}
 .contact-container .form-contacts-container .contacts {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   color: #ffffff;
   gap: 30px;
 }
 .contact-container .form-contacts-container .contacts .contacts-item {
   display: flex;
   justify-content: center;
+  align-items: center;
+  width: fit-content;
+  gap: 10px;
+  margin-bottom: 0px;
 }
 .contact-container .form-contacts-container .contacts .linkedin-text {
   cursor: pointer;
   text-decoration: none;
+  width: fit-content;
+}
+.contact-container .form-contacts-container .contacts .linkedin-icon {
+  font-size: 33px;
+  width: fit-content;
+  align-items: center;
+  margin-right: 10px;
+}
+.contact-container .form-contacts-container .contacts .xd {
+  margin-left: 4px;
 }
 * {
   padding: 0;

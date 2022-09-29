@@ -3,14 +3,17 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-bottom: 200px;
+    padding-bottom: 10rem;
     background-color: @negro-main;
     font-family: @ubuntu-font;
     .projects-container-h2{
         font-size: 50px;
-        margin-top: 150px;
+        margin-top: 10rem;
         margin-bottom: 100px;
         color: #ffffff;
+        @media only screen and (max-width: 70rem) {
+            margin-top: 7.3rem;
+        }
     }
     .projects{
         display: flex;
@@ -18,10 +21,10 @@
         justify-content: center;
         flex-wrap: wrap;
         margin-bottom: 10px;
-        gap: 50px;
+        gap: 4.063rem;
         .projects-pi {
             border-radius: 4px;
-            width: 400px;
+            width: 23rem;
             height: 320px;
             background-color: @negro-second;
             display: flex;
@@ -51,7 +54,7 @@
 
         .projects-portfolio{
             border-radius: 4px;
-            width: 400px;
+            width: 23rem;
             height: 320px;
             background-color: @negro-second;
             display: flex;
@@ -78,6 +81,9 @@
                 box-shadow: 8px 8px 1px -2px rgba(243,71,71,1);
             }   
         }
+    }
+    @media only screen and (max-width: 70rem) {
+        padding-bottom: 8rem;
     }
 }
 

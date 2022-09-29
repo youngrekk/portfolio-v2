@@ -6,21 +6,25 @@
     color: #ffffff;
     flex-wrap: wrap;
     flex-direction: row;
-    padding: 200px 50px;
     justify-content: center;
+    gap: 4rem;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
 
+    @media only screen and (max-width: 70rem) {
+        padding-bottom: 8rem;
+    }
 
     .about-me {
         display: flex;
         flex-direction: column;
         width: 50%;
-        padding: 5px 30px;
+        padding-top: 3rem;
         }
         .about-me-h3 {
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-bottom: 30px;
         }
         .about-me-text {
             padding-top: 5px;
@@ -29,5 +33,5 @@
 }
 
 .me-photo {
-    width: 350px;
+    width: 22rem;
 }
