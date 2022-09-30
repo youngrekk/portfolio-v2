@@ -324,10 +324,13 @@ header {
     justify-content: flex-end;
   }
   .nav-bar .burger-container .icon-burger {
-    background-color: #181818;
+    background-color: rgba(24, 24, 24, 0.7);
     display: block;
     width: 3rem;
     margin-right: 2.2rem;
+  }
+  .nav-bar .burger-container .icon-burger .burger-lol {
+    background-color: rgba(24, 24, 24, 0.7);
   }
   .nav-bar .burger-container .icon-burger:hover {
     background-color: #ddd;

@@ -36,5 +36,5 @@ function myFunction() {
       x.style.display = "flex";
       burger.style.backgroundColor = "white"
     }
-}
+};
 
