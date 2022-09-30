@@ -348,7 +348,6 @@ header {
     background-color: rgba(24, 24, 24, 0.7);
   }
   .nav-bar .burger-container .icon-burger:hover {
-    background-color: #ddd;
     color: black;
   }
   .nav-bar .burger-container .icon-burger i {

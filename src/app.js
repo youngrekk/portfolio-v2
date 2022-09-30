@@ -28,13 +28,13 @@ toggleButton.addEventListener('click', () => {
 function myFunction() {
     var x = document.getElementById("myLinks");
     var burger = document.getElementById("burger");
+    var burger2 = document.getElementById("burger-lol");
 
     if (x.style.display === "flex") {
       x.style.display = "none";
-      burger.style.backgroundColor = "rgb(24, 24, 24)"
+      burger.style.backgroundColor = "rgb(24, 24, 24, 0.7)"
     } else {
       x.style.display = "flex";
-      burger.style.backgroundColor = "white"
     }
 };
 
