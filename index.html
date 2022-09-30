@@ -12,13 +12,40 @@
 </head>
 <body>
     <nav class="nav-bar">
-        <ul class="nav-list">
-            <li><a class="nav-list-item" href="#home">Inicio</a></li>
-            <li><a class="nav-list-item" href="#about-me">Sobre mi</a></li>
-            <li><a class="nav-list-item" href="#projects">Proyectos</a></li>
-            <a class="nav-button-contact" href="#contact" role="button">Contacto</a>
-        </ul>
+        <div class="burger-container">
+            <a href="javascript:void(0);" class="icon-burger" id="burger" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+
+        </div>
+
+        <div class="navbar-links">
+            <ul class="nav-list" id="myLinks">
+                <li><a class="nav-list-item" href="#home" onclick="myFunction()">Inicio</a></li>
+                <li><a class="nav-list-item" href="#about-me" onclick="myFunction()">Sobre mi</a></li>
+                <li><a class="nav-list-item" href="#projects" onclick="myFunction()">Proyectos</a></li>
+                <a class="nav-button-contact" href="#contact" role="button" onclick="myFunction()">Contacto</a>
+            </ul>
+        </div>
     </nav>
+
+
+    <!-- <nav class="navbar">
+        <div class="brand-title">Brand Name</div>
+        <a href="#" class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+          <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Sobre mi</a></li>
+            <li><a href="#">Proyectos</a></li>
+          </ul>
+        </div>
+      </nav> -->
+
     <header id="home">
         <div class="dev-card">
             <p class="hola-dev-card">Hola! me llamo</p>

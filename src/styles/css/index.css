@@ -55,7 +55,7 @@ header {
   box-shadow: 0px 5px 12px 3px rgba(24, 24, 24, 0.76);
 }
 .dev-card {
-  padding: 180px 0px;
+  padding: 150px 0px;
   padding-left: 50px;
   position: relative;
   color: #ffffff;
@@ -98,7 +98,7 @@ header {
   position: relative;
   top: 1px;
 }
-@media only screen and (max-width: 70rem) {
+@media only screen and (max-width: 41.875rem) {
   .dev-card {
     padding-left: 1rem;
   }
@@ -303,28 +303,56 @@ header {
   width: 100%;
   background-color: rgba(24, 24, 24, 0.7);
   margin: auto;
-  padding: 20px 10px;
+  padding: 10px 10px;
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
   transition: 0.6s;
   z-index: 10;
 }
-.nav-bar .nav-list {
+.nav-bar .icon-burger {
+  display: none;
+}
+@media only screen and (max-width: 650px) {
+  .nav-bar {
+    flex-direction: column;
+  }
+  .nav-bar .burger-container {
+    width: 100vw;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .nav-bar .burger-container .icon-burger {
+    background-color: #181818;
+    display: block;
+    width: 3rem;
+    margin-right: 2.2rem;
+  }
+  .nav-bar .burger-container .icon-burger:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  .nav-bar .burger-container .icon-burger i {
+    color: #f34747;
+    padding-left: 4px;
+    font-size: 3rem;
+  }
+}
+.nav-bar .navbar-links .nav-list {
   position: relative;
   display: flex;
   margin-bottom: 0;
   padding-left: 0;
 }
-.nav-bar .nav-list li {
+.nav-bar .navbar-links .nav-list li {
   position: relative;
   display: inline-block;
   list-style: none;
   margin: 0px 25px;
   margin-top: 10px;
 }
-.nav-bar .nav-list li::before {
+.nav-bar .navbar-links .nav-list li::before {
   content: "";
   height: 2px;
   width: 0%;
@@ -334,16 +362,30 @@ header {
   left: 0px;
   transition: 0.4s ease-out;
 }
-.nav-bar .nav-list li:hover::before {
+.nav-bar .navbar-links .nav-list li:hover::before {
   width: 100%;
 }
-.nav-bar .nav-list li .nav-list-item {
+.nav-bar .navbar-links .nav-list li .nav-list-item {
   position: relative;
   letter-spacing: 1px;
   color: #ffffff;
   text-decoration: none;
 }
-.nav-bar .nav-button-contact {
+@media only screen and (max-width: 650px) {
+  .nav-bar .navbar-links .nav-list li {
+    margin: 10px 0px;
+    font-size: 1.3rem;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .nav-bar .navbar-links .nav-list {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none;
+  }
+}
+.nav-bar .navbar-links .nav-button-contact {
   margin-left: 10px;
   margin-right: 15px;
   background-color: #f34747;
