@@ -15,17 +15,35 @@
     padding-bottom: 8rem;
   }
 }
+@media only screen and (max-width: 68.75rem) {
+  .about-me-container .foto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.about-me-container .foto .me-photo {
+  width: 22rem;
+}
+@media only screen and (max-width: 68.75rem) {
+  .about-me-container .foto .me-photo {
+    width: 20rem;
+  }
+}
 .about-me-container .about-me {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 50%;
-  padding-top: 3rem;
+  padding-top: 2rem;
 }
 .about-me-container .about-me .about-me-h3 {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
 }
 .about-me-container .about-me .about-me-text {
   padding-top: 5px;
@@ -36,17 +54,14 @@
     width: 13rem;
   }
 }
-@media only screen and (max-width: 70rem) {
-  .about-me-container .about-me {
+@media only screen and (max-width: 43.875rem) {
+  .about-me-container .about-me .about-me-text {
     width: 20rem;
   }
 }
-.about-me-container .me-photo {
-  width: 22rem;
-}
 @media only screen and (max-width: 70rem) {
-  .about-me-container .me-photo {
-    width: 15rem;
+  .about-me-container .about-me {
+    width: 20rem;
   }
 }
 header {

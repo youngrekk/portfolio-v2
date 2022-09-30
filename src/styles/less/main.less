@@ -14,17 +14,32 @@
     @media only screen and (max-width: 70rem) {
         padding-bottom: 8rem;
     }
-
+    .foto {
+        @media only screen and (max-width: 68.75rem) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .me-photo {
+            width: 22rem;
+            @media only screen and (max-width: 68.75rem) {
+                width: 20rem;
+            }
+        }
+    }
     .about-me {
         display: flex;
         flex-direction: column;
         align-items: center;
         width: 50%;
-        padding-top: 3rem;
+        padding-top: 2rem;
         .about-me-h3 {
             display: flex;
             justify-content: center;
             align-items: center;
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
         }
         .about-me-text {
             padding-top: 5px;
@@ -32,17 +47,15 @@
             @media only screen and (max-width: 70rem) {
                 width: 13rem
             }
+            @media only screen and (max-width: 43.875rem) {
+                width: 20rem;
+            }
         }
         @media only screen and (max-width: 70rem) {
             width: 20rem;
         }
     }
 
-    .me-photo {
-    width: 22rem;
-    @media only screen and (max-width: 70rem) {
-        width: 15rem;
-        }
-    }
+
 }
 
