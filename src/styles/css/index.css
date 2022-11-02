@@ -149,12 +149,11 @@ header {
 .projects-container .projects .projects-pi {
   border-radius: 4px;
   width: 23rem;
-  height: 21.3rem;
+  height: 24.3rem;
   background-color: #222222;
   display: flex;
   flex-direction: column;
   transition: all 400ms ease;
-  cursor: pointer;
 }
 @media only screen and (max-width: 70rem) {
   .projects-container .projects .projects-pi {
@@ -176,6 +175,19 @@ header {
   margin-left: 20px;
   margin-right: 20px;
 }
+.projects-container .projects .projects-pi .iconos {
+  display: flex;
+  margin-top: 1em;
+  justify-content: space-around;
+}
+.projects-container .projects .projects-pi .iconos .video-icon {
+  cursor: pointer;
+  display: flex;
+}
+.projects-container .projects .projects-pi .iconos .github-icon {
+  cursor: pointer;
+  display: flex;
+}
 .projects-container .projects .projects-pi:hover {
   transform: translate(-8px, -8px);
   box-shadow: 8px 8px 1px -2px #f34747;
@@ -183,12 +195,11 @@ header {
 .projects-container .projects .projects-portfolio {
   border-radius: 4px;
   width: 23rem;
-  height: 21.3rem;
+  height: 24.3rem;
   background-color: #222222;
   display: flex;
   flex-direction: column;
   transition: all 400ms ease;
-  cursor: pointer;
 }
 @media only screen and (max-width: 70rem) {
   .projects-container .projects .projects-portfolio {
@@ -209,6 +220,10 @@ header {
   margin-top: 10px;
   margin-left: 20px;
   margin-right: 20px;
+}
+.projects-container .projects .projects-portfolio .github-icon {
+  cursor: pointer;
+  margin-left: 45%;
 }
 .projects-container .projects .projects-portfolio:hover {
   transform: translate(-8px, -8px);
